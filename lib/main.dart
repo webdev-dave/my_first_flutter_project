@@ -11,7 +11,9 @@ void main() {
           backgroundColor: Colors.deepOrange[900],
         ),
         body: const Center(
-          child: Text("I love coding!"),
+          child: Image(
+            image: AssetImage("assets/images/american_bison.jpg"),
+          ),
         ),
         backgroundColor: Colors.deepOrange[200],
       ),
