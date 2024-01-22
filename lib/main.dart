@@ -8,16 +8,16 @@ class MyWidget extends StatelessWidget {
   const MyWidget({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Center(
-              child: Text("Web Dev Dave"),
+    return SafeArea(
+      child: MaterialApp(
+        home: Scaffold(
+            appBar: AppBar(
+              title: const Center(
+                child: Text("Web Dev Dave"),
+              ),
+              backgroundColor: Colors.deepOrange[900],
             ),
-            backgroundColor: Colors.deepOrange[900],
-          ),
-          body: SafeArea(
-            child: Container(
+            body: Container(
               color: Colors.deepOrange[200],
               width: double.infinity,
               height: double.infinity,
@@ -26,10 +26,12 @@ class MyWidget extends StatelessWidget {
               alignment: Alignment.center,
               child: Image.asset(
                 "assets/images/american_bison.jpg",
-                // fit: BoxFit.fill,
+                // width: double.infinity,
+                // height: double.infinity,
+                // fit: BoxFit.cover,
               ),
-            ),
-          )),
+            )),
+      ),
     );
   }
 }
