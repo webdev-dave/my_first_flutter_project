@@ -17,18 +17,54 @@ class MyWidget extends StatelessWidget {
               ),
               backgroundColor: Colors.deepOrange[900],
             ),
-            body: Container(
-              color: Colors.deepOrange[200],
-              width: double.infinity,
-              height: double.infinity,
-              padding: const EdgeInsets.all(0),
-              margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-              alignment: Alignment.center,
-              child: Image.asset(
-                "assets/images/american_bison.jpg",
-                // width: double.infinity,
-                // height: double.infinity,
-                // fit: BoxFit.cover,
+            body: SafeArea(
+              child: Container(
+                color: Colors.deepOrange[200],
+                width: double.infinity,
+                height: double.infinity,
+                padding: const EdgeInsets.all(0),
+                margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                alignment: Alignment.center,
+                child: Column(
+                  children: [
+                    Container(
+                      color: Colors.blue.shade300,
+                      width: 150.0,
+                      height: 150.0,
+                      alignment: Alignment.center,
+                      padding: const EdgeInsets.all(20.0),
+                      child: const Text("I love coding!"),
+                    ),
+                    Container(
+                      color: Colors.red.shade500,
+                      width: 150.0,
+                      height: 150.0,
+                      alignment: Alignment.center,
+                      padding: const EdgeInsets.all(20.0),
+                      child: const Text("I love coding!"),
+                    ),
+                    Container(
+                      color: Colors.green.shade500,
+                      width: 150.0,
+                      height: 150.0,
+                      alignment: Alignment.center,
+                      padding: const EdgeInsets.all(20.0),
+                      child: const Text("I love coding!"),
+                    ),
+                    Container(
+                      color: Colors.brown.shade500,
+                      width: 150.0,
+                      height: 150.0,
+                      alignment: Alignment.center,
+                      child: Image.asset(
+                        "assets/images/american_bison.jpg",
+                        // width: double.infinity,
+                        // height: double.infinity,
+                        // fit: BoxFit.cover,
+                      ),
+                    )
+                  ],
+                ),
               ),
             )),
       ),
