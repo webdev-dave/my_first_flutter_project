@@ -26,50 +26,165 @@ class MyWidget extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
                 //alignment: Alignment.centerLeft,
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      color: Colors.blue.shade300,
-                      height: 150.0,
-                      alignment: Alignment.center,
-                      padding: const EdgeInsets.all(20.0),
-                      child: const Text(
-                        "I really like coding!",
-                        textAlign: TextAlign.center,
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      //crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          // crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Container(
+                              color: Colors.blue.shade300,
+                              width: 100.0,
+                              height: 100.0,
+                              alignment: Alignment.center,
+                              padding: const EdgeInsets.all(20.0),
+                              child: const Text(
+                                "I really like coding!",
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              color: Colors.red.shade500,
+                              width: 100.0,
+                              height: 100.0,
+                              alignment: Alignment.center,
+                              padding: const EdgeInsets.all(20.0),
+                              child: const Text(
+                                "I love coding!",
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              color: Colors.green.shade500,
+                              width: 100.0,
+                              height: 100.0,
+                              alignment: Alignment.center,
+                              padding: const EdgeInsets.all(20.0),
+                              child: const Text(
+                                "I'm obsessed with coding!",
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              color: Colors.brown.shade500,
+                              width: 100.0,
+                              height: 100.0,
+                              alignment: Alignment.center,
+                              child: Image.asset(
+                                "assets/images/american_bison.jpg",
+                                // width: double.infinity,
+                                // height: double.infinity,
+                                // fit: BoxFit.cover,
+                              ),
+                            )
+                          ],
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          // crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              color: Colors.blue.shade300,
+                              width: 100.0,
+                              height: 100.0,
+                              alignment: Alignment.center,
+                              padding: const EdgeInsets.all(20.0),
+                              child: const Text(
+                                "I really like coding!",
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              color: Colors.red.shade500,
+                              width: 100.0,
+                              height: 100.0,
+                              alignment: Alignment.center,
+                              padding: const EdgeInsets.all(20.0),
+                              child: const Text(
+                                "I love coding!",
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              color: Colors.green.shade500,
+                              width: 100.0,
+                              height: 100.0,
+                              alignment: Alignment.center,
+                              padding: const EdgeInsets.all(20.0),
+                              child: const Text(
+                                "I'm obsessed with coding!",
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            Container(
+                              color: Colors.brown.shade500,
+                              width: 100.0,
+                              height: 100.0,
+                              alignment: Alignment.center,
+                              child: Image.asset(
+                                "assets/images/american_bison.jpg",
+                                // width: double.infinity,
+                                // height: double.infinity,
+                                // fit: BoxFit.cover,
+                              ),
+                            )
+                          ],
+                        ),
+                      ],
                     ),
-                    Container(
-                      color: Colors.red.shade500,
-                      height: 150.0,
-                      alignment: Alignment.center,
-                      padding: const EdgeInsets.all(20.0),
-                      child: const Text(
-                        "I love coding!",
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      color: Colors.green.shade500,
-                      height: 150.0,
-                      alignment: Alignment.center,
-                      padding: const EdgeInsets.all(20.0),
-                      child: const Text(
-                        "I'm obsessed with coding!",
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    Container(
-                      color: Colors.brown.shade500,
-                      width: 150.0,
-                      height: 150.0,
-                      alignment: Alignment.center,
-                      child: Image.asset(
-                        "assets/images/american_bison.jpg",
-                        // width: double.infinity,
-                        // height: double.infinity,
-                        // fit: BoxFit.cover,
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          color: Colors.blue.shade300,
+                          width: 100.0,
+                          height: 100.0,
+                          alignment: Alignment.center,
+                          padding: const EdgeInsets.all(20.0),
+                          child: const Text(
+                            "I really like coding!",
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Container(
+                          color: Colors.red.shade500,
+                          width: 100.0,
+                          height: 100.0,
+                          alignment: Alignment.center,
+                          padding: const EdgeInsets.all(20.0),
+                          child: const Text(
+                            "I love coding!",
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Container(
+                          color: Colors.green.shade500,
+                          width: 100.0,
+                          height: 100.0,
+                          alignment: Alignment.center,
+                          padding: const EdgeInsets.all(20.0),
+                          child: const Text(
+                            "I'm obsessed with coding!",
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Container(
+                          color: Colors.brown.shade500,
+                          width: 100.0,
+                          height: 100.0,
+                          alignment: Alignment.center,
+                          child: Image.asset(
+                            "assets/images/american_bison.jpg",
+                            // width: double.infinity,
+                            // height: double.infinity,
+                            // fit: BoxFit.cover,
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
