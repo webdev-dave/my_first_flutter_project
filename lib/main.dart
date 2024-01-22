@@ -19,11 +19,14 @@ class MyWidget extends StatelessWidget {
           body: Container(
             color: Colors.deepOrange[200],
             width: double.infinity,
-            height: 150.0,
+            height: double.infinity,
             padding: const EdgeInsets.all(20.0),
             margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
             alignment: Alignment.center,
-            child: const Text("How you doing?"),
+            child: Image.asset(
+              "assets/images/american_bison.jpg",
+              // fit: BoxFit.fill,
+            ),
           )),
     );
   }
