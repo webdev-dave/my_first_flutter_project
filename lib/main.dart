@@ -16,16 +16,18 @@ class MyWidget extends StatelessWidget {
             ),
             backgroundColor: Colors.deepOrange[900],
           ),
-          body: Container(
-            color: Colors.deepOrange[200],
-            width: double.infinity,
-            height: double.infinity,
-            padding: const EdgeInsets.all(20.0),
-            margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-            alignment: Alignment.center,
-            child: Image.asset(
-              "assets/images/american_bison.jpg",
-              // fit: BoxFit.fill,
+          body: SafeArea(
+            child: Container(
+              color: Colors.deepOrange[200],
+              width: double.infinity,
+              height: double.infinity,
+              padding: const EdgeInsets.all(0),
+              margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+              alignment: Alignment.center,
+              child: Image.asset(
+                "assets/images/american_bison.jpg",
+                // fit: BoxFit.fill,
+              ),
             ),
           )),
     );
