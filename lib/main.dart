@@ -24,32 +24,40 @@ class MyWidget extends StatelessWidget {
                 height: double.infinity,
                 padding: const EdgeInsets.all(0),
                 margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                alignment: Alignment.center,
+                //alignment: Alignment.centerLeft,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Container(
                       color: Colors.blue.shade300,
-                      width: 150.0,
                       height: 150.0,
                       alignment: Alignment.center,
                       padding: const EdgeInsets.all(20.0),
-                      child: const Text("I love coding!"),
+                      child: const Text(
+                        "I really like coding!",
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Container(
                       color: Colors.red.shade500,
-                      width: 150.0,
                       height: 150.0,
                       alignment: Alignment.center,
                       padding: const EdgeInsets.all(20.0),
-                      child: const Text("I love coding!"),
+                      child: const Text(
+                        "I love coding!",
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Container(
                       color: Colors.green.shade500,
-                      width: 150.0,
                       height: 150.0,
                       alignment: Alignment.center,
                       padding: const EdgeInsets.all(20.0),
-                      child: const Text("I love coding!"),
+                      child: const Text(
+                        "I'm obsessed with coding!",
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                     Container(
                       color: Colors.brown.shade500,
